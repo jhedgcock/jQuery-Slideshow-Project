@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Slideshow</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+<!--alert( "Handler for .click() called." );-->
+
+
+$(function(){
+	var lgOpen = false;
+	$( ".lg_img" ).hide(); //hides large img class
+$( "div > #1" ).hover(function() { //.hover() only works on first one
+  		if(!lgOpen) {
+			$("#lg_img_1" ).toggle();
+			$("#lg_img_1").css("opacity", "0.6");
+			lgOpen = true;
+		} else {
+			$("#lg_img_1" ).hide();
+			lgOpen = false;
+			}
+	});
+	$( "div > #2" ).hover(function() { //.hover() only works on first one
+  		if(!lgOpen) {
+			$("#lg_img_2" ).toggle();
+			$("#lg_img_2").css("opacity", "0.6");
+			lgOpen = true;
+		} else {
+			$("#lg_img_2" ).hide();
+			lgOpen = false;
+			}
+	});
+		$( "div > #3" ).hover(function() { //.hover() only works on first one
+  		if(!lgOpen) {
+			$("#lg_img_3" ).toggle();
+			$("#lg_img_3").css("opacity", "0.6");
+			lgOpen = true;
+		} else {
+			$("#lg_img_3" ).hide();
+			lgOpen = false;
+			}
+	});
+		$( "div > #4" ).hover(function() { //.hover() only works on first one
+  		if(!lgOpen) {
+			$("#lg_img_4" ).toggle();
+			$("#lg_img_4").css("opacity", "0.6");
+			lgOpen = true;
+		} else {
+			$("#lg_img_4" ).hide();
+			lgOpen = false;
+			}
+	});
+		$( "div > #5" ).hover(function() { //.hover() only works on first one
+  		if(!lgOpen) {
+			$("#lg_img_5" ).toggle();
+			$("#lg_img_5").css("opacity", "0.6");
+			lgOpen = true;
+		} else {
+			$("#lg_img_5" ).hide();
+			lgOpen = false;
+			}
+	});
+	
+	
+	
+	
+	
+	/*$( "div > .slideshow" ).click(function() { //.hover() only works on first one
+  		if(!lgOpen) {
+			$(".lg_img" ).toggle();
+			$(".lg_img").css("opacity", "0.2");
+			lgOpen = true;
+		} else {
+			$(".lg_img" ).hide();
+			lgOpen = false;
+			}
+	});
+*/
+	
+});<!--jQuery init end-->
+</script>
+</head>
+<style>
+/*RESET CSS*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*End Reset*/
+
+
+	#container {margin: 10%; auto;}
+	.slideshow img {float: left; }
+	.lg_img{position: absolute; top:10; left:10;}
+</style>
+<body>
+<div id="container">
+
+	<div class="slideshow" id="1">
+		<img src="images/channelislands.jpg" alt="channel_islands">
+        <img class="lg_img" id="lg_img_1" src="images/placeholder_1.jpg"/>
+	</div>
+    <div class="slideshow" id="2">
+    	<img src="images/deathvalley.jpg"/>
+        <img class="lg_img" id="lg_img_2" src="images/placeholder_2.jpg"/>
+    </div>
+     <div class="slideshow" id="3">
+    	<img src="images/grandcanyon.jpg"/>
+        <img class="lg_img" id="lg_img_3" src="images/placeholder_3.jpg"/>
+    </div>
+     <div class="slideshow" id="4">
+    	<img src="images/yosemite.jpg"/>
+        <img class="lg_img" id="lg_img_4" src="images/placeholder_4.jpg"/>
+    </div>
+     <div class="slideshow" id="5">
+    	<img src="images/zion.jpg"/>
+        <img class="lg_img" id="lg_img_5" src="images/placeholder_5.jpg"/>
+    </div>
+<!--<img src="images/placeholder_1.jpg"/>-->
+
+
+
+</div><!--#container end->
+
+
+</body>
+</html>
